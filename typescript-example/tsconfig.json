@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": "./",
         "inlineSourceMap": true,
         "lib": [
             "es2015",
@@ -7,12 +8,16 @@
             "dom.iterable"
         ],
         "module": "commonjs",
+        "outDir": "build",
+        "rootDir": "./",
+        "rootDirs": [ "./", "src", "tests" ],
         "target": "es5",
 
         // Ensure the SystemJS global is defined
-        "types": [ "systemjs" ]
+        "types": [ "intern", "systemjs" ]
     },
     "include": [
-        "src/**/*.ts"
+        "src/**/*.ts",
+        "tests/**/*.ts"
     ]
 }

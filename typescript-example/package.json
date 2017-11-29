@@ -6,8 +6,8 @@
   "scripts": {
     "test": "intern",
     "start": "intern serveOnly",
-    "build": "tsc && tsc -p tests",
-    "clean": "del 'src/**/*.js' 'tests/**/*.js'"
+    "build": "tsc",
+    "clean": "del 'build'"
   },
   "author": "",
   "license": "ISC",
